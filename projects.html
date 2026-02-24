@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — Robyn Desiree Gonzales | Web Development Portfolio</title>
+  <meta name="description" content="Explore the web development and UI/UX design projects by Robyn Desiree Gonzales, including Zencor Agriculture, Alpha Frozen Meat Shop, ZBPlanet, Yarn Crafts, and Ichiberry." />
+  <meta name="keywords" content="web development projects, portfolio, Robyn Gonzales projects, HTML CSS JavaScript, WordPress, Figma UI design" />
+  <meta name="author" content="Robyn Desiree Gonzales" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://robyndgonzales.dev/projects.html" />
+  <meta property="og:title" content="Projects — Robyn Desiree Gonzales" />
+  <meta property="og:description" content="Explore the web development and UI/UX design projects by Robyn Desiree Gonzales." />
+  <meta property="og:site_name" content="Robyn Desiree Gonzales Portfolio" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Projects — Robyn Desiree Gonzales" />
+  <meta name="twitter:description" content="Explore the web development and UI/UX design projects by Robyn Desiree Gonzales." />
+  <link rel="canonical" href="https://robyndgonzales.dev/projects.html" />
+  <link rel="stylesheet" href="projects.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,600;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav>
+    <a href="index.html" class="logo">
+      <img src="img/RDG_logo.png" alt="RDG Logo" class="logo-img" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-inner">
+      <p class="drawer-ghost" aria-hidden="true">MENU</p>
+      <nav class="drawer-nav">
+        <a href="index.html" class="drawer-link"><span class="drawer-link-num">01</span>Home</a>
+        <a href="about.html" class="drawer-link"><span class="drawer-link-num">02</span>About</a>
+        <a href="projects.html" class="drawer-link active"><span class="drawer-link-num">03</span>Projects</a>
+        <a href="resume.html" class="drawer-link"><span class="drawer-link-num">04</span>Resume</a>
+        <a href="contact.html" class="drawer-link"><span class="drawer-link-num">05</span>Contact</a>
+      </nav>
+    </div>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- ═══ PAGE HEADER ═══ -->
+  <header class="page-header">
+    <p class="header-eyebrow">My Work</p>
+    <h1 class="page-title">All<br/>Projects</h1>
+    <div class="page-title-ghost" aria-hidden="true">PROJECT</div>
+
+    <div class="header-meta">
+      <p class="header-count">Showing <span id="visibleCount">5</span> projects</p>
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="css">CSS</button>
+        <button class="filter-tab" data-filter="javascript">JavaScript</button>
+        <button class="filter-tab" data-filter="wordpress">WordPress</button>
+        <button class="filter-tab" data-filter="figma">Figma</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ PROJECTS GRID ═══ -->
+  <section class="projects-section">
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- PROJECT 1: Zencor -->
+      <div class="project-card card-1" data-tags="html,css,javascript">
+        <div class="card-number">01 / 05</div>
+        <div class="card-thumb">
+          <div class="slideshow-wrap">
+            <img class="slide active" src="img/zencoragri_tn.png"   alt="Zencor — Home" />
+            <img class="slide"        src="img/zencor_abt.png"      alt="Zencor — About" />
+            <img class="slide"        src="img/zencor_products.png" alt="Zencor — Products" />
+            <img class="slide"        src="img/zencor_blog.png"     alt="Zencor — Blog" />
+            <img class="slide"        src="img/zencor_contact.png"  alt="Zencor — Contacts" />
+            <div class="slide-dots">
+              <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="card-tag">HTML</span>
+            <span class="card-tag">CSS</span>
+            <span class="card-tag">JavaScript</span>
+          </div>
+          <h2 class="card-title">Zencor Agriculture</h2>
+          <p class="card-desc">An agriculture-focused website, enhancing its front-end design, performance, and SEO to improve user experience and search visibility.</p>
+          <div class="card-footer">
+            <div class="card-links">
+              <button class="card-link view-details" onclick="openModal('zencoragri')">
+                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                View Details
+              </button>
+              <a href="https://zencoragri.com/" class="card-link live-demo" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+              <a href="https://github.com/ElishaClaireGania/Zencor" class="card-link github" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 2: Alpha Frozen Meat Shop -->
+      <div class="project-card card-2" data-tags="html,css,javascript">
+        <div class="card-number">02 / 05</div>
+        <div class="card-thumb">
+          <div class="slideshow-wrap">
+            <img class="slide active" src="img/Alpha_tn.png"        alt="Alpha — Home" />
+            <img class="slide"        src="img/Alpha_abt.png"       alt="Alpha — About" />
+            <img class="slide"        src="img/Alpha_features.png"  alt="Alpha — Features" />
+            <img class="slide"        src="img/Alpha_products.png"  alt="Alpha — Products" />
+            <img class="slide"        src="img/Alpha_contacts.png"  alt="Alpha — Contacts" />
+            <div class="slide-dots">
+              <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="card-tag">HTML</span>
+            <span class="card-tag">CSS</span>
+            <span class="card-tag">JavaScript</span>
+          </div>
+          <h2 class="card-title">Alpha Frozen Meat Shop</h2>
+          <p class="card-desc">A local meat shop in Pampanga, featuring product showcases, ordering interface, and contact information to enhance online customer engagement.</p>
+          <div class="card-footer">
+            <div class="card-links">
+              <button class="card-link view-details" onclick="openModal('alpha')">
+                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                View Details
+              </button>
+              <a href="https://github.com/robyndgonzales/Alpha-Frozen-Meat-Shop" class="card-link github" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 3: ZBPlanet -->
+      <div class="project-card card-3" data-tags="wordpress">
+        <div class="card-number">03 / 05</div>
+        <div class="card-thumb">
+          <div class="slideshow-wrap">
+            <img class="slide active" src="img/zb1_tn.png"      alt="ZBPLANET — Home" />
+            <img class="slide"        src="img/zb1_abt.png"     alt="ZBPLANET — About" />
+            <img class="slide"        src="img/zb1_blog.png"    alt="ZBPLANET — Blog" />
+            <img class="slide"        src="img/zb1_contact.png" alt="ZBPLANET — Contacts" />
+            <div class="slide-dots">
+              <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="card-tag">WordPress</span>
+          </div>
+          <h2 class="card-title">ZBPlanet</h2>
+          <p class="card-desc">Fanbase website showcasing group information, albums, and media content with structured navigation and engaging layout for improved user experience.</p>
+          <div class="card-footer">
+            <div class="card-links">
+              <button class="card-link view-details" onclick="openModal('zbplanet')">
+                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                View Details
+              </button>
+              <a href="https://gonzalesrobyn2407.wordpress.com/" class="card-link live-demo" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 4: Yarn Crafts -->
+      <div class="project-card card-4" data-tags="figma">
+        <div class="card-number">04 / 05</div>
+        <div class="card-thumb">
+          <div class="slideshow-wrap">
+            <img class="slide active" src="img/yarncrafts_tn.png"       alt="Yarn Crafts — Home" />
+            <img class="slide"        src="img/yarncrafts_abt.png"      alt="Yarn Crafts — About" />
+            <img class="slide"        src="img/yarncrafts_crochets.png" alt="Yarn Crafts — Crochets" />
+            <img class="slide"        src="img/yarncrafts_reviews.png"  alt="Yarn Crafts — Reviews" />
+            <img class="slide"        src="img/yarncrafts_contacts.png" alt="Yarn Crafts — Contacts" />
+            <div class="slide-dots">
+              <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="card-tag">Figma</span>
+            <span class="card-tag">UI/UX</span>
+          </div>
+          <h2 class="card-title">Yarn Crafts.</h2>
+          <p class="card-desc">A crochet and yarn crafts website UI designed in Figma, featuring cozy aesthetics, product pages, reviews section, and a full contact layout.</p>
+          <div class="card-footer">
+            <div class="card-links">
+              <button class="card-link view-details" onclick="openModal('yarncrafts')">
+                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                View Details
+              </button>
+              <a href="https://www.figma.com/design/tHvdWjyGRyw9esIZYazl87/Gonzales--Robyn-Desiree_Mock-Up?node-id=4-112&t=KaQzXKpiD5OWm0rN-0" class="card-link live-demo" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                View Design
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 5: Ichiberry -->
+      <div class="project-card card-5" data-tags="html,css">
+        <div class="card-number">05 / 05</div>
+        <div class="card-thumb">
+          <div class="slideshow-wrap">
+            <img class="slide active" src="img/ichiberry_tn.png"       alt="Ichiberry — Home" />
+            <img class="slide"        src="img/ichiberry_abt.png"      alt="Ichiberry — About" />
+            <img class="slide"        src="img/ichiberry_reviews.png"  alt="Ichiberry — Reviews" />
+            <img class="slide"        src="img/ichiberry_specials.png" alt="Ichiberry — Specials" />
+            <img class="slide"        src="img/ichiberry_contact.png"  alt="Ichiberry — Contacts" />
+            <div class="slide-dots">
+              <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="card-tag">HTML</span>
+            <span class="card-tag">CSS</span>
+          </div>
+          <h2 class="card-title">Ichiberry</h2>
+          <p class="card-desc">A responsive multi-page dessert website using HTML and CSS that showcases clean UI design, structured navigation, and frontend development skills.</p>
+          <div class="card-footer">
+            <div class="card-links">
+              <button class="card-link view-details" onclick="openModal('ichiberry')">
+                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                View Details
+              </button>
+              <a href="https://github.com/robyndgonzales/Ichiberry" class="card-link github" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="no-results" id="noResults" style="display:none;">
+      <p class="no-results-text">No projects found for this filter.</p>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECT DETAIL MODALS ═══ -->
+
+  <!-- Modal: Zencor Agriculture -->
+  <div class="modal-overlay" id="modal-zencoragri" role="dialog" aria-modal="true">
+    <div class="modal-box" tabindex="-1">
+      <button class="modal-close" onclick="closeModal('zencoragri')" aria-label="Close">&#x2715;</button>
+      <div class="modal-header">
+        <div class="modal-tags"><span class="modal-tag">HTML</span><span class="modal-tag">CSS</span><span class="modal-tag">JavaScript</span></div>
+        <h2 class="modal-title">Zencor Agriculture</h2>
+        <p class="modal-subtitle">Website Enhancement &bull; 2024</p>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">01</span> Description</h3>
+          <p>Zencor Agriculture is a professional website for a real company in the agriculture industry. The project involved a comprehensive front-end overhaul to modernize the visual design, improve load performance, and boost search engine visibility across all pages.</p>
+        </div>
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">02</span> Purpose</h3>
+          <p>To give the company a credible, polished digital presence that accurately represents its services, while making it easier for potential clients to discover the business through improved SEO and a better user experience.</p>
+        </div>
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">03</span> Key Features</h3>
+          <ul class="modal-list">
+            <li>Fully responsive layout optimized for all screen sizes</li>
+            <li>Performance improvements through asset optimization</li>
+            <li>SEO enhancements: semantic HTML, meta tags, proper heading hierarchy</li>
+            <li>Modern, consistent UI with a branded color system</li>
+            <li>Product and services showcase with organized navigation</li>
+            <li>Contact form with Google Maps integration</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">04</span> Tools &amp; Technologies</h3>
+          <div class="modal-tech-grid">
+            <span class="modal-tech">HTML5</span><span class="modal-tech">CSS3</span>
+            <span class="modal-tech">JavaScript ES6+</span><span class="modal-tech">Responsive Design</span>
+            <span class="modal-tech">SEO Best Practices</span><span class="modal-tech">Git / GitHub</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://zencoragri.com/" target="_blank" class="modal-btn modal-btn-primary">Live Demo &#x2197;</a>
+        <a href="https://github.com/ElishaClaireGania/Zencor" target="_blank" class="modal-btn modal-btn-ghost">GitHub &#x2192;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Alpha Frozen Meat Shop -->
+  <div class="modal-overlay" id="modal-alpha" role="dialog" aria-modal="true">
+    <div class="modal-box" tabindex="-1">
+      <button class="modal-close" onclick="closeModal('alpha')" aria-label="Close">&#x2715;</button>
+      <div class="modal-header">
+        <div class="modal-tags"><span class="modal-tag">HTML</span><span class="modal-tag">CSS</span><span class="modal-tag">JavaScript</span></div>
+        <h2 class="modal-title">Alpha Frozen Meat Shop</h2>
+        <p class="modal-subtitle">Business Website &bull; 2024</p>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">01</span> Description</h3>
+          <p>Alpha Frozen Meat Shop is a digital storefront for a local business in Pampanga, Philippines. Designed and developed from scratch, the site gives the shop a professional online presence to showcase products and connect with customers.</p>
+        </div>
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">02</span> Purpose</h3>
+          <p>To bring this local business online and allow customers to browse available products, learn about the shop, and easily get in touch — expanding reach beyond walk-in customers and improving overall customer engagement.</p>
+        </div>
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">03</span> Key Features</h3>
+          <ul class="modal-list">
+            <li>Product showcase with categorized selections and pricing</li>
+            <li>Ordering inquiry interface for customer requests</li>
+            <li>Business info, location, and contact details section</li>
+            <li>Mobile-responsive layout for on-the-go browsing</li>
+            <li>Scroll animations and interactive UI elements via JavaScript</li>
+            <li>Clean visual hierarchy guiding users from discovery to contact</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">04</span> Tools &amp; Technologies</h3>
+          <div class="modal-tech-grid">
+            <span class="modal-tech">HTML5</span><span class="modal-tech">CSS3</span>
+            <span class="modal-tech">JavaScript ES6+</span><span class="modal-tech">Flexbox &amp; Grid</span>
+            <span class="modal-tech">Responsive Design</span><span class="modal-tech">Git / GitHub</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com/robyndgonzales/Alpha-Frozen-Meat-Shop" target="_blank" class="modal-btn modal-btn-primary">GitHub &#x2197;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: ZBPlanet -->
+  <div class="modal-overlay" id="modal-zbplanet" role="dialog" aria-modal="true">
+    <div class="modal-box" tabindex="-1">
+      <button class="modal-close" onclick="closeModal('zbplanet')" aria-label="Close">&#x2715;</button>
+      <div class="modal-header">
+        <div class="modal-tags"><span class="modal-tag">WordPress</span></div>
+        <h2 class="modal-title">ZBPlanet</h2>
+        <p class="modal-subtitle">Fanbase Website &bull; 2024</p>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">01</span> Description</h3>
+          <p>ZBPlanet is a fanbase website dedicated to the K-pop group ZEROBASEONE (ZB1). Built on WordPress, it gives fans a centralized hub for group news, album information, member profiles, and media content.</p>
+        </div>
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">02</span> Purpose</h3>
+          <p>To create an organized and visually engaging fan community site that keeps fans updated on the group. The project also served as hands-on practice with WordPress CMS, page builders, and theme customization.</p>
+        </div>
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">03</span> Key Features</h3>
+          <ul class="modal-list">
+            <li>Member profile pages with bios and photo galleries</li>
+            <li>Album and discography showcase with structured navigation</li>
+            <li>Blog section for fan updates and news posts</li>
+            <li>Engaging visual layout using a custom WordPress theme</li>
+            <li>Contact section for fan community interaction</li>
+            <li>Mobile-responsive design across all pages</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">04</span> Tools &amp; Technologies</h3>
+          <div class="modal-tech-grid">
+            <span class="modal-tech">WordPress CMS</span><span class="modal-tech">Elementor</span>
+            <span class="modal-tech">Custom Theme</span><span class="modal-tech">WP Plugins</span>
+            <span class="modal-tech">Responsive Design</span><span class="modal-tech">Content Management</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://gonzalesrobyn2407.wordpress.com/" target="_blank" class="modal-btn modal-btn-primary">Live Demo &#x2197;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Yarn Crafts -->
+  <div class="modal-overlay" id="modal-yarncrafts" role="dialog" aria-modal="true">
+    <div class="modal-box" tabindex="-1">
+      <button class="modal-close" onclick="closeModal('yarncrafts')" aria-label="Close">&#x2715;</button>
+      <div class="modal-header">
+        <div class="modal-tags"><span class="modal-tag">Figma</span><span class="modal-tag">UI/UX</span></div>
+        <h2 class="modal-title">Yarn Crafts.</h2>
+        <p class="modal-subtitle">UI/UX Design Mockup &bull; 2024</p>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">01</span> Description</h3>
+          <p>Yarn Crafts is a full UI/UX mockup designed in Figma for a crochet and handmade yarn products business. The design uses a warm, cozy aesthetic that reflects the handcrafted nature of the products while maintaining a clean and modern web layout.</p>
+        </div>
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">02</span> Purpose</h3>
+          <p>To practice and demonstrate UI/UX design skills — specifically creating full multi-page website mockups from scratch in Figma. The goal was to produce a complete, cohesive user experience ready for developer handoff.</p>
+        </div>
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">03</span> Key Features</h3>
+          <ul class="modal-list">
+            <li>Multi-page design: Home, About, Products, Reviews, and Contact</li>
+            <li>Consistent design system with custom palette, typography, and spacing</li>
+            <li>Product listing pages with card-based UI components</li>
+            <li>Customer reviews section with testimonial cards</li>
+            <li>Contact form layout and business information section</li>
+            <li>Mobile-first responsive frames for multiple screen sizes</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">04</span> Tools &amp; Technologies</h3>
+          <div class="modal-tech-grid">
+            <span class="modal-tech">Figma</span><span class="modal-tech">Auto Layout</span>
+            <span class="modal-tech">Component Variants</span><span class="modal-tech">Prototyping</span>
+            <span class="modal-tech">UI Design Principles</span><span class="modal-tech">UX Research</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://www.figma.com/design/tHvdWjyGRyw9esIZYazl87/Gonzales--Robyn-Desiree_Mock-Up?node-id=4-112&t=KaQzXKpiD5OWm0rN-0" target="_blank" class="modal-btn modal-btn-primary">View in Figma &#x2197;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Ichiberry -->
+  <div class="modal-overlay" id="modal-ichiberry" role="dialog" aria-modal="true">
+    <div class="modal-box" tabindex="-1">
+      <button class="modal-close" onclick="closeModal('ichiberry')" aria-label="Close">&#x2715;</button>
+      <div class="modal-header">
+        <div class="modal-tags"><span class="modal-tag">HTML</span><span class="modal-tag">CSS</span></div>
+        <h2 class="modal-title">Ichiberry</h2>
+        <p class="modal-subtitle">Multi-Page Website &bull; 2024</p>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">01</span> Description</h3>
+          <p>Ichiberry is a responsive multi-page website for a dessert and berry-themed café concept. Built purely with HTML and CSS, it demonstrates core front-end skills through a clean, structured, and visually appealing multi-page design.</p>
+        </div>
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">02</span> Purpose</h3>
+          <p>Developed to strengthen foundational front-end skills — writing semantic HTML and organized, reusable CSS. A practical exercise in building complete multi-page websites without relying on JavaScript frameworks or libraries.</p>
+        </div>
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">03</span> Key Features</h3>
+          <ul class="modal-list">
+            <li>Five-page structure: Home, About, Specials, Reviews, and Contact</li>
+            <li>Fully responsive layout using Flexbox and CSS Grid</li>
+            <li>Consistent navigation across all pages</li>
+            <li>Dessert product showcase with visual card components</li>
+            <li>Customer reviews section with custom CSS styling</li>
+            <li>Accessible, semantic HTML5 markup throughout</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">04</span> Tools &amp; Technologies</h3>
+          <div class="modal-tech-grid">
+            <span class="modal-tech">HTML5</span><span class="modal-tech">CSS3</span>
+            <span class="modal-tech">Flexbox</span><span class="modal-tech">CSS Grid</span>
+            <span class="modal-tech">Responsive Design</span><span class="modal-tech">Git / GitHub</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com/robyndgonzales/Ichiberry" target="_blank" class="modal-btn modal-btn-primary">GitHub &#x2197;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer-main">
+    <div class="footer-top">
+      <div class="footer-col footer-info">
+        <a href="index.html" class="footer-logo">
+          <img src="img/RDG_logo.png" alt="RDG Logo" class="footer-logo-img" />
+        </a>
+        <p class="footer-desc">Front-end Developer &amp; UI/UX Designer based in San Fernando, Pampanga. Crafting responsive, accessible, and visually polished web experiences.</p>
+        <div class="footer-contact-list">
+          <a href="mailto:gonzalesrobyn24@gmail.com" class="footer-contact-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+            gonzalesrobyn24@gmail.com
+          </a>
+          <a href="tel:+639984028621" class="footer-contact-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .94h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            0998 402 8621
+          </a>
+          <span class="footer-contact-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            San Fernando, Pampanga
+          </span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Quick Links</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="contact.html">Web Design</a></li>
+          <li><a href="contact.html">Frontend Development</a></li>
+          <li><a href="contact.html">UI/UX Design</a></li>
+          <li><a href="contact.html">Responsive Layouts</a></li>
+          <li><a href="contact.html">SEO Optimization</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Connect</p>
+        <div class="footer-socials-grid">
+          <a href="https://github.com/robyndgonzales" target="_blank" class="footer-social-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/robyn-gonzales-507611350/" target="_blank" class="footer-social-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://www.facebook.com/robyn.gonz" target="_blank" class="footer-social-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            Facebook
+          </a>
+          <a href="mailto:gonzalesrobyn24@gmail.com" class="footer-social-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+            Email
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 Robyn Desiree Gonzales &mdash; All rights reserved</p>
+      <p class="footer-tagline">Designed &amp; Developed by RDG</p>
+    </div>
+  </footer>
+
+  <script>
+  /* ── Mobile nav ── */
+  (function(){
+    var h=document.getElementById('hamburger'),d=document.getElementById('mobileDrawer'),o=document.getElementById('drawerOverlay');
+    if(!h||!d||!o)return;
+    function open(){h.classList.add('is-open');h.setAttribute('aria-expanded','true');d.classList.add('is-open');d.setAttribute('aria-hidden','false');o.classList.add('is-active');document.body.classList.add('drawer-open');}
+    function close(){h.classList.remove('is-open');h.setAttribute('aria-expanded','false');d.classList.remove('is-open');d.setAttribute('aria-hidden','true');o.classList.remove('is-active');document.body.classList.remove('drawer-open');}
+    h.addEventListener('click',function(){d.classList.contains('is-open')?close():open();});
+    o.addEventListener('click',close);
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'){close();closeAllModals();}});
+    d.querySelectorAll('.drawer-link').forEach(function(l){l.addEventListener('click',close);});
+  })();
+
+  /* ── Filter tabs ── */
+  document.querySelectorAll('.filter-tab').forEach(function(tab){
+    tab.addEventListener('click',function(){
+      document.querySelectorAll('.filter-tab').forEach(function(t){t.classList.remove('active');});
+      tab.classList.add('active');
+      var filter=tab.getAttribute('data-filter').toLowerCase();
+      var cards=document.querySelectorAll('.project-card');
+      var visible=0;
+      cards.forEach(function(card){
+        var tags=card.getAttribute('data-tags')||'';
+        var show=filter==='all'||tags.split(',').indexOf(filter)!==-1;
+        if(show){card.style.display='';visible++;}
+        else{card.style.display='none';}
+      });
+      document.getElementById('visibleCount').textContent=visible;
+      var noR=document.getElementById('noResults');
+      if(noR)noR.style.display=visible===0?'block':'none';
+    });
+  });
+
+  /* ── Modal ── */
+  function openModal(id){
+    var m=document.getElementById('modal-'+id);
+    if(!m)return;
+    m.classList.add('is-open');
+    document.body.classList.add('modal-open');
+    var box=m.querySelector('.modal-box');
+    if(box)box.focus();
+  }
+  function closeModal(id){
+    var m=document.getElementById('modal-'+id);
+    if(!m)return;
+    m.classList.remove('is-open');
+    if(!document.querySelector('.modal-overlay.is-open'))
+      document.body.classList.remove('modal-open');
+  }
+  function closeAllModals(){
+    document.querySelectorAll('.modal-overlay.is-open').forEach(function(m){m.classList.remove('is-open');});
+    document.body.classList.remove('modal-open');
+  }
+  document.querySelectorAll('.modal-overlay').forEach(function(ov){
+    ov.addEventListener('click',function(e){if(e.target===ov)closeAllModals();});
+  });
+
+  /* ── Slideshow on hover ── */
+  document.querySelectorAll('.project-card').forEach(function(card){
+    var wrap=card.querySelector('.slideshow-wrap');
+    if(!wrap)return;
+    var slides=Array.from(wrap.querySelectorAll('.slide'));
+    var dots=Array.from(wrap.querySelectorAll('.dot'));
+    if(slides.length<=1)return;
+    var current=0,timer=null;
+    function goTo(n){
+      slides[current].classList.remove('active');
+      if(dots[current])dots[current].classList.remove('active');
+      current=(n+slides.length)%slides.length;
+      slides[current].classList.add('active');
+      if(dots[current])dots[current].classList.add('active');
+    }
+    card.addEventListener('mouseenter',function(){timer=setInterval(function(){goTo(current+1);},1800);});
+    card.addEventListener('mouseleave',function(){
+      clearInterval(timer);timer=null;
+      slides[current].classList.remove('active');
+      if(dots[current])dots[current].classList.remove('active');
+      current=0;slides[0].classList.add('active');
+      if(dots[0])dots[0].classList.add('active');
+    });
+    dots.forEach(function(dot,i){dot.addEventListener('click',function(e){e.stopPropagation();goTo(i);});});
+  });
+  </script>
+
+</body>
+</html>

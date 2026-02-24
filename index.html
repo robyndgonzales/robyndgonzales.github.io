@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Robyn Desiree Gonzales — Front-end Developer &amp; UI/UX Designer Portfolio</title>
+  <meta name="description" content="Portfolio of Robyn Desiree Gonzales — an aspiring front-end web developer and UI/UX designer from San Fernando, Pampanga. Specializing in responsive web design, HTML, CSS, and JavaScript." />
+  <meta name="keywords" content="Robyn Desiree Gonzales, front-end developer Philippines, UI/UX designer, web developer portfolio, Pampanga, HTML CSS JavaScript, responsive web design" />
+  <meta name="author" content="Robyn Desiree Gonzales" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://robyndgonzales.dev/" />
+  <meta property="og:title" content="Robyn Desiree Gonzales — Front-end Developer &amp; UI/UX Designer" />
+  <meta property="og:description" content="Portfolio of Robyn Desiree Gonzales — front-end web developer and UI/UX designer crafting responsive, accessible, and visually polished web experiences." />
+  <meta property="og:site_name" content="Robyn Desiree Gonzales Portfolio" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Robyn Desiree Gonzales — Front-end Developer &amp; UI/UX Designer" />
+  <meta name="twitter:description" content="Portfolio of Robyn Desiree Gonzales — front-end web developer and UI/UX designer from San Fernando, Pampanga." />
+  <link rel="canonical" href="https://robyndgonzales.dev/" />
+  <link rel="stylesheet" href="home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,600;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav>
+    <a href="index.html" class="logo">
+      <img src="img/RDG_logo.png" alt="RDG Logo" class="logo-img" />
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger button (mobile only) -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-inner">
+      <p class="drawer-ghost" aria-hidden="true">MENU</p>
+      <nav class="drawer-nav">
+        <a href="index.html" class="drawer-link active">
+          <span class="drawer-link-num">01</span>Home
+        </a>
+        <a href="about.html" class="drawer-link">
+          <span class="drawer-link-num">02</span>About
+        </a>
+        <a href="projects.html" class="drawer-link">
+          <span class="drawer-link-num">03</span>Projects
+        </a>
+        <a href="resume.html" class="drawer-link">
+          <span class="drawer-link-num">04</span>Resume
+        </a>
+        <a href="contact.html" class="drawer-link">
+          <span class="drawer-link-num">05</span>Contact
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Backdrop overlay -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Available for freelance</p>
+
+      <h1 class="hero-name">
+        <span class="accent">Robyn</span><br/>
+        Desiree<br/>
+        Gonzales
+      </h1>
+
+      <p class="hero-profession">Front-end Developer &bull; UI/UX Designer</p>
+      <div class="divider"></div>
+      <p class="hero-tagline">Design that Delivers,<br/>Code that Performs</p>
+
+      <p class="hero-desc">A front-end web developer passionate about creating modern websites while continuously improving my skills.</p>
+
+      <div class="hero-actions">
+        <a href="projects.html" class="btn-primary">View My Work</a>
+        <a href="contact.html" class="btn-hire">Hire Me</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-big-text">RDG</div>
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        Open to opportunities
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      Scroll
+    </div>
+  </section>
+
+  <!-- ═══ STRIP ═══ -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">Web Design <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Frontend Development <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">UI/UX Design <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Brand Identity <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Responsive Layouts <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Design Systems <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Web Design <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Frontend Development <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">UI/UX Design <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Brand Identity <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Responsive Layouts <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Design Systems <span class="marquee-dot">·</span></span>
+    </div>
+  </div>
+
+  <!-- ═══ STATS STRIP ═══ -->
+  <div class="stats-strip">
+    <div class="stat-item">
+      <span class="stat-number">3+</span>
+      <span class="stat-label">Projects</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-number">7+</span>
+      <span class="stat-label">Certifications</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-number">85%</span>
+      <span class="stat-label">Soft Skills</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-number">80%</span>
+      <span class="stat-label">Technical Skills</span>
+    </div>
+  </div>
+
+  <!-- ═══ FEATURED PROJECTS ═══ -->
+  <section class="projects" id="projects">
+    <div class="section-header">
+      <span class="section-label">&star;</span>
+      <h2 class="section-title">Featured Projects</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <img src="img/zencoragri_tn.png" alt="Zencor Agriculture" class="project-thumb" />
+        <div class="project-overlay">
+          <div class="project-overlay-content">
+            <span class="project-tag">HTML · CSS · JavaScript</span>
+            <h3 class="project-title">Zencor Agriculture</h3>
+            <p class="project-desc">An agriculture-focused website enhancing front-end design, performance, and SEO to improve user experience and search visibility.</p>
+            <a href="projects.html" class="project-link">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="img/Alpha_tn.png" alt="Alpha Frozen Meat Shop" class="project-thumb" />
+        <div class="project-overlay">
+          <div class="project-overlay-content">
+            <span class="project-tag">HTML · CSS · JavaScript</span>
+            <h3 class="project-title">Alpha Frozen Meat Shop</h3>
+            <p class="project-desc">A local meat shop in Pampanga featuring product showcases, ordering interface, and contact information to enhance online customer engagement.</p>
+            <a href="projects.html" class="project-link">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="img/zb1_tn.png" alt="ZBPLANET" class="project-thumb" />
+        <div class="project-overlay">
+          <div class="project-overlay-content">
+            <span class="project-tag">WordPress</span>
+            <h3 class="project-title">ZBPlanet</h3>
+            <p class="project-desc">Fanbase website showcasing group information, albums, and media content with structured navigation and engaging layout.</p>
+            <a href="projects.html" class="project-link">View Project</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- View More button -->
+    <div class="projects-view-more">
+      <a href="projects.html" class="btn-view-more">
+        <span>View All Projects</span>
+        <span class="btn-arrow">→</span>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer-main">
+    <div class="footer-top">
+      <div class="footer-col footer-info">
+        <a href="index.html" class="footer-logo">
+          <img src="img/RDG_logo.png" alt="RDG Logo" class="footer-logo-img" />
+        </a>
+        <p class="footer-desc">Front-end Developer &amp; UI/UX Designer based in San Fernando, Pampanga. Crafting responsive, accessible, and visually polished web experiences.</p>
+        <div class="footer-contact-list">
+          <a href="mailto:gonzalesrobyn24@gmail.com" class="footer-contact-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+            gonzalesrobyn24@gmail.com
+          </a>
+          <a href="tel:+639984028621" class="footer-contact-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .94h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            0998 402 8621
+          </a>
+          <span class="footer-contact-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            San Fernando, Pampanga
+          </span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Quick Links</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="contact.html">Web Design</a></li>
+          <li><a href="contact.html">Frontend Development</a></li>
+          <li><a href="contact.html">UI/UX Design</a></li>
+          <li><a href="contact.html">Responsive Layouts</a></li>
+          <li><a href="contact.html">SEO Optimization</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Connect</p>
+        <div class="footer-socials-grid">
+          <a href="https://github.com/robyndgonzales" target="_blank" class="footer-social-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/robyn-gonzales-507611350/" target="_blank" class="footer-social-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://www.facebook.com/robyn.gonz" target="_blank" class="footer-social-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            Facebook
+          </a>
+          <a href="mailto:gonzalesrobyn24@gmail.com" class="footer-social-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+            Email
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 Robyn Desiree Gonzales — All rights reserved</p>
+      <p class="footer-tagline">Designed &amp; Developed by RDG</p>
+    </div>
+  </footer>
+
+  <script src="home.js"></script>
+
+</body>
+</html>
