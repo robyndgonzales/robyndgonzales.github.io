@@ -1,10 +1,6 @@
 # robyndgonzales.github.io
 Website Portfolio of Robyn Desiree D. Gonzales
 
-# Resume Website
-
-## 📌 Description
-
 **👋 Welcome to my GitHub Pages portfolio!**
 
 This repository hosts my personal resume and portfolio website built with HTML, CSS, and JavaScript. It includes:
