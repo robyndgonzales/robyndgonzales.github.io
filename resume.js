@@ -1,7 +1,3 @@
-/* ════════════════════════════════
-   RESUME PAGE — resume.js
-════════════════════════════════ */
-
 /* ── PDF Download ── */
 function triggerDownload() {
   const btn      = document.getElementById('downloadBtn');

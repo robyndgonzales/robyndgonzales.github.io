@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>document.documentElement.setAttribute("data-theme",localStorage.getItem("rdg-theme")||"dark");</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects — Robyn Desiree Gonzales | Web Development Portfolio</title>
+  <title>Projects | Robyn Desiree Gonzales | Web Development Portfolio</title>
   <meta name="description" content="Explore the web development and UI/UX design projects by Robyn Desiree Gonzales, including Zencor Agriculture, Alpha Frozen Meat Shop, ZBPlanet, Yarn Crafts, and Ichiberry." />
   <meta name="keywords" content="web development projects, portfolio, Robyn Gonzales projects, HTML CSS JavaScript, WordPress, Figma UI design" />
   <meta name="author" content="Robyn Desiree Gonzales" />
@@ -18,11 +19,12 @@
   <meta name="twitter:description" content="Explore the web development and UI/UX design projects by Robyn Desiree Gonzales." />
   <link rel="canonical" href="https://robyndgonzales.dev/projects.html" />
   <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="theme.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,600;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
-  <!-- ═══ NAVBAR ═══ -->
+  <!-- navbar -->
   <nav>
     <a href="index.html" class="logo">
       <img src="img/RDG_logo.png" alt="RDG Logo" class="logo-img" />
@@ -34,12 +36,17 @@
       <li><a href="resume.html">Resume</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <!-- Theme Toggle (desktop) -->
+    <button class="theme-toggle" aria-label="Switch to light mode" title="Toggle theme">
+      <svg class="theme-icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="theme-icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
-  <!-- Mobile drawer -->
+  <!-- Mobile nav -->
   <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
     <div class="drawer-inner">
       <p class="drawer-ghost" aria-hidden="true">MENU</p>
@@ -50,6 +57,10 @@
         <a href="resume.html" class="drawer-link"><span class="drawer-link-num">04</span>Resume</a>
         <a href="contact.html" class="drawer-link"><span class="drawer-link-num">05</span>Contact</a>
       </nav>
+      <div class="drawer-theme-row">
+        <span class="drawer-theme-label">Theme</span>
+        <button class="drawer-theme-btn" aria-label="Toggle theme"></button>
+      </div>
     </div>
   </div>
   <div class="drawer-overlay" id="drawerOverlay"></div>
@@ -64,6 +75,7 @@
       <p class="header-count">Showing <span id="visibleCount">5</span> projects</p>
       <div class="filter-tabs">
         <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="html">HTML</button>
         <button class="filter-tab" data-filter="css">CSS</button>
         <button class="filter-tab" data-filter="javascript">JavaScript</button>
         <button class="filter-tab" data-filter="wordpress">WordPress</button>
@@ -98,7 +110,7 @@
             <span class="card-tag">JavaScript</span>
           </div>
           <h2 class="card-title">Zencor Agriculture</h2>
-          <p class="card-desc">An agriculture-focused website, enhancing its front-end design, performance, and SEO to improve user experience and search visibility.</p>
+          <p class="card-desc">A group project — an agriculture-focused website enhancement. My role was encoding the frontend of the About page, while contributing to design, performance, and SEO improvements across the site.</p>
           <div class="card-footer">
             <div class="card-links">
               <button class="card-link view-details" onclick="openModal('zencoragri')">
@@ -286,10 +298,14 @@
       <div class="modal-body">
         <div class="modal-section">
           <h3 class="modal-section-title"><span class="modal-section-num">01</span> Description</h3>
-          <p>Zencor Agriculture is a professional website for a real company in the agriculture industry. The project involved a comprehensive front-end overhaul to modernize the visual design, improve load performance, and boost search engine visibility across all pages.</p>
+          <p>Zencor Agriculture is a professional website for a real company in the agriculture industry. This was a <strong>group project</strong> — my role was encoding the frontend of the <strong>About page</strong>, where I applied responsive layout, semantic HTML, and consistent styling aligned with the site-wide design system. The project involved a comprehensive front-end overhaul to modernize the visual design, improve load performance, and boost search engine visibility.</p>
         </div>
         <div class="modal-section">
-          <h3 class="modal-section-title"><span class="modal-section-num">02</span> Purpose</h3>
+          <h3 class="modal-section-title"><span class="modal-section-num">02</span> My Role</h3>
+          <p>Responsible for encoding the <strong>About page</strong> frontend — structuring the layout with semantic HTML, styling with CSS following the site design system, and ensuring the page was fully responsive across all screen sizes.</p>
+        </div>
+        <div class="modal-section">
+          <h3 class="modal-section-title"><span class="modal-section-num">03</span> Purpose</h3>
           <p>To give the company a credible, polished digital presence that accurately represents its services, while making it easier for potential clients to discover the business through improved SEO and a better user experience.</p>
         </div>
         <div class="modal-section">
@@ -304,7 +320,7 @@
           </ul>
         </div>
         <div class="modal-section">
-          <h3 class="modal-section-title"><span class="modal-section-num">04</span> Tools &amp; Technologies</h3>
+          <h3 class="modal-section-title"><span class="modal-section-num">05</span> Tools &amp; Technologies</h3>
           <div class="modal-tech-grid">
             <span class="modal-tech">HTML5</span><span class="modal-tech">CSS3</span>
             <span class="modal-tech">JavaScript ES6+</span><span class="modal-tech">Responsive Design</span>
@@ -549,10 +565,6 @@
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
             LinkedIn
           </a>
-          <a href="https://www.facebook.com/robyn.gonz" target="_blank" class="footer-social-btn">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-            Facebook
-          </a>
           <a href="mailto:gonzalesrobyn24@gmail.com" class="footer-social-btn">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
             Email
@@ -566,7 +578,8 @@
     </div>
   </footer>
 
-  <script>
+  <script src="theme.js"></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   /* ── Mobile nav ── */
   (function(){
     var h=document.getElementById('hamburger'),d=document.getElementById('mobileDrawer'),o=document.getElementById('drawerOverlay');

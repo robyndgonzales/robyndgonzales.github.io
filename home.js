@@ -1,6 +1,3 @@
-/* ═══════════════════════════════════════
-   MOBILE HAMBURGER / DRAWER
-═══════════════════════════════════════ */
 (function () {
   const hamburger    = document.getElementById('hamburger');
   const mobileDrawer = document.getElementById('mobileDrawer');
